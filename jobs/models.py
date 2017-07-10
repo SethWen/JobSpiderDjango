@@ -29,6 +29,8 @@ class LagouJobs(models.Model):
     positionName = models.CharField(max_length=50)
     salary = models.CharField(max_length=20)
     workYear = models.CharField(max_length=20)
+    companyLogo = models.CharField(max_length=100)
+    positionId = models.CharField(max_length=20)
 
     def __str__(self):
         return self.positionName
