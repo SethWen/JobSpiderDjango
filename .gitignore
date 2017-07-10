@@ -1,2 +1,4 @@
 .idea
 *.pyc
+uwsgi.log
+uwsgi.pid

@@ -49,3 +49,19 @@ class LagouJobs(models.Model):
 
     class Meta():
         db_table = 'jobs_lagou'
+
+
+class ZhilianJobs(models.Model):
+    keyWord = models.CharField(max_length=20)
+    position = models.CharField(max_length=20)
+    company = models.CharField(max_length=50)
+    salary = models.CharField(max_length=20)
+    address = models.CharField(max_length=50)
+    pubDate = models.CharField(max_length=20)
+    detailHref = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.position
+
+    class Meta():
+        db_table = 'jobs_zhilian'

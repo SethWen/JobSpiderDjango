@@ -2,30 +2,57 @@
 
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
-import json
-from models import LagouJobs
+from models import LagouJobs, ZhilianJobs
 from dss import Serializer
 
 
 # Create your views here.
 
-def index(request):
-    # jobs = LagouJobs.objects.all().filter(pk=20)
+def get_lagou(request):
+    """
+    获取拉勾网职位信息
+    :param request:
+    :return:
+    """
+    response_dict = get_jobs(request, LagouJobs)
+    return JsonResponse(response_dict, safe=False)
+
+
+def get_zhilian(request):
+    """
+    获取智联招聘职位信息
+    :param request:
+    :return:
+    """
+    response_dict = get_jobs(request, ZhilianJobs)
+    return JsonResponse(response_dict, safe=False)
+
+
+def get_jobs(request, mtype):
+    """
+    获取职位信息
+    :param request:
+    :param mtype:
+    :return:
+    """
     offset = request.GET.get('offset', 0)
     limit = request.GET.get('limit', 10)
-
+    # type=1: python; type=2: android
+    ptype = int(request.GET.get('type', 1))
     offset = int(offset)
     limit = int(limit)
-
-    jobs = LagouJobs.objects.all()
+    if ptype == 1:
+        jobs = mtype.objects.all().filter(keyWord='python')
+    elif ptype == 2:
+        jobs = mtype.objects.all().filter(keyWord='android')
+    else:
+        jobs = ZhilianJobs.objects.all()
     count = jobs.count()
     if count >= limit * (offset + 1):
         offset_jobs = jobs[offset * limit:offset * limit + limit]
     else:
         offset_jobs = jobs[offset * limit:offset * limit + (count % limit)]
-
     print('mlgb', type(jobs))
-
     s = Serializer.serializer(offset_jobs)
     response_dict = {
         'code': 20200,
@@ -33,4 +60,4 @@ def index(request):
         'data': s
     }
     print(type(s))
-    return JsonResponse(response_dict, safe=False)
+    return response_dict

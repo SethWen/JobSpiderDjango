@@ -1,0 +1,508 @@
+*** Starting uWSGI 2.0.15 (64bit) on [Sun Jul  9 23:23:44 2017] ***
+compiled with version: 5.4.0 20160609 on 09 July 2017 23:15:07
+os: Linux-4.8.0-58-generic #63~16.04.1-Ubuntu SMP Mon Jun 26 18:08:51 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/shawn/Desktop/workspace/JobSpider
+writing pidfile to uwsgi.pid
+detected binary path: /home/shawn/.virtualenvs/py2/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shawn/Desktop/workspace/JobSpider
+your processes number limit is 7758
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 192.168.1.104:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:40379 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1b6b7f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1b6b7f0 pid: 4116 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4116)
+spawned uWSGI worker 1 (pid: 4119, cores: 2)
+spawned uWSGI worker 2 (pid: 4120, cores: 2)
+spawned uWSGI worker 3 (pid: 4122, cores: 2)
+spawned uWSGI worker 4 (pid: 4123, cores: 2)
+spawned uWSGI http 1 (pid: 4125)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 4123|app: 0|req: 1/1] 192.168.1.109 () {38 vars in 716 bytes} [Mon Jul 10 06:25:06 2017] GET /jobs/?offset=0&limit=5 => generated 2369 bytes in 212 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4119|app: 0|req: 1/2] 192.168.1.109 () {40 vars in 772 bytes} [Mon Jul 10 06:25:09 2017] GET /static/images/jiua.jpg => generated 2149 bytes in 58 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4123|app: 0|req: 2/3] 192.168.1.109 () {38 vars in 717 bytes} [Mon Jul 10 06:25:11 2017] GET /static/images/jiua.jpg => generated 2149 bytes in 15 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 4120|app: 0|req: 1/4] 192.168.1.109 () {38 vars in 717 bytes} [Mon Jul 10 06:25:12 2017] GET /static/images/jiua.jpg => generated 2149 bytes in 68 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4122|app: 0|req: 1/5] 192.168.1.109 () {38 vars in 717 bytes} [Mon Jul 10 06:25:13 2017] GET /static/images/jiua.jpg => generated 2149 bytes in 80 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4122|app: 0|req: 2/6] 192.168.1.109 () {38 vars in 717 bytes} [Mon Jul 10 06:25:14 2017] GET /static/images/jiua.jpg => generated 2149 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 4122|app: 0|req: 3/7] 192.168.1.109 () {38 vars in 716 bytes} [Mon Jul 10 06:25:20 2017] GET /jobs/?offset=0&limit=5 => generated 2369 bytes in 32 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 4125)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Sun Jul  9 23:26:33 2017] ***
+compiled with version: 5.4.0 20160609 on 09 July 2017 23:15:07
+os: Linux-4.8.0-58-generic #63~16.04.1-Ubuntu SMP Mon Jun 26 18:08:51 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/shawn/Desktop/workspace/JobSpider
+writing pidfile to uwsgi.pid
+detected binary path: /home/shawn/.virtualenvs/py2/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shawn/Desktop/workspace/JobSpider
+your processes number limit is 7758
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 192.168.1.104:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:42477 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x21897f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x21897f0 pid: 4185 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4185)
+spawned uWSGI worker 1 (pid: 4188, cores: 2)
+spawned uWSGI worker 2 (pid: 4189, cores: 2)
+spawned uWSGI worker 3 (pid: 4190, cores: 2)
+spawned uWSGI worker 4 (pid: 4192, cores: 2)
+spawned uWSGI http 1 (pid: 4193)
+[pid: 4190|app: 0|req: 1/1] 192.168.1.109 () {38 vars in 717 bytes} [Mon Jul 10 06:26:40 2017] GET /static/images/jiua.jpg => generated 96 bytes in 71 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4189|app: 0|req: 1/2] 192.168.1.109 () {38 vars in 717 bytes} [Mon Jul 10 06:26:42 2017] GET /static/images/jiua.jpg => generated 96 bytes in 61 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4190|app: 0|req: 2/3] 192.168.1.109 () {38 vars in 717 bytes} [Mon Jul 10 06:26:43 2017] GET /static/images/jiua.jpg => generated 96 bytes in 13 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 4190|app: 0|req: 3/4] 192.168.1.109 () {38 vars in 716 bytes} [Mon Jul 10 06:26:45 2017] GET /jobs/?offset=0&limit=5 => generated 2369 bytes in 135 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4192|app: 0|req: 1/5] 192.168.1.109 () {36 vars in 696 bytes} [Mon Jul 10 06:27:38 2017] GET /static/images/NetAssist.zip => generated 101 bytes in 46 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4192|app: 0|req: 2/6] 192.168.1.109 () {36 vars in 682 bytes} [Mon Jul 10 06:27:45 2017] GET /static/NetAssist.zip => generated 94 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 4193)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Sun Jul  9 23:28:58 2017] ***
+compiled with version: 5.4.0 20160609 on 09 July 2017 23:15:07
+os: Linux-4.8.0-58-generic #63~16.04.1-Ubuntu SMP Mon Jun 26 18:08:51 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/shawn/Desktop/workspace/JobSpider
+writing pidfile to uwsgi.pid
+detected binary path: /home/shawn/.virtualenvs/py2/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shawn/Desktop/workspace/JobSpider
+your processes number limit is 7758
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 192.168.1.104:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:38855 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1f2c7f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1f2c7f0 pid: 4226 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4226)
+spawned uWSGI worker 1 (pid: 4229, cores: 2)
+spawned uWSGI worker 2 (pid: 4230, cores: 2)
+spawned uWSGI worker 3 (pid: 4231, cores: 2)
+spawned uWSGI worker 4 (pid: 4233, cores: 2)
+spawned uWSGI http 1 (pid: 4234)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 4231|app: 0|req: 1/1] 192.168.1.109 () {38 vars in 716 bytes} [Mon Jul 10 06:29:04 2017] GET /jobs/?offset=0&limit=5 => generated 2369 bytes in 80 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4229|app: 0|req: 1/2] 192.168.1.109 () {38 vars in 713 bytes} [Mon Jul 10 06:29:07 2017] GET /static/NetAssist.zip => generated 94 bytes in 54 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4230|app: 0|req: 1/3] 192.168.1.109 () {36 vars in 686 bytes} [Mon Jul 10 06:29:21 2017] GET /static/images/jiua.jpg => generated 96 bytes in 55 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 4234)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Sun Jul  9 23:52:51 2017] ***
+compiled with version: 5.4.0 20160609 on 09 July 2017 23:15:07
+os: Linux-4.8.0-58-generic #63~16.04.1-Ubuntu SMP Mon Jun 26 18:08:51 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/shawn/Desktop/workspace/JobSpider
+writing pidfile to uwsgi.pid
+detected binary path: /home/shawn/.virtualenvs/py2/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shawn/Desktop/workspace/JobSpider
+your processes number limit is 7758
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 192.168.1.104:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:36045 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xd857f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0xd857f0 pid: 4713 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4713)
+spawned uWSGI worker 1 (pid: 4716, cores: 2)
+spawned uWSGI worker 2 (pid: 4717, cores: 2)
+spawned uWSGI worker 3 (pid: 4719, cores: 2)
+spawned uWSGI worker 4 (pid: 4720, cores: 2)
+spawned uWSGI http 1 (pid: 4722)
+[pid: 4717|app: 0|req: 1/1] 192.168.1.109 () {40 vars in 738 bytes} [Mon Jul 10 06:54:06 2017] GET /jobs/?offset=0&limit=5 => generated 79 bytes in 576 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4720|app: 0|req: 1/2] 192.168.1.109 () {40 vars in 700 bytes} [Mon Jul 10 06:54:07 2017] GET /favicon.ico => generated 85 bytes in 76 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 4720|app: 0|req: 2/3] 192.168.1.109 () {36 vars in 705 bytes} [Mon Jul 10 06:54:14 2017] GET /jobs/get_lagou/?offset=0&limit=5 => generated 2369 bytes in 938 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 1)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 4716|app: 0|req: 1/4] 192.168.1.109 () {38 vars in 736 bytes} [Mon Jul 10 06:57:52 2017] GET /jobs/get_lagou/?offset=0&limit=5 => generated 2369 bytes in 102 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 4720|app: 0|req: 3/5] 192.168.1.109 () {36 vars in 719 bytes} [Mon Jul 10 06:58:03 2017] GET /jobs/get_lagou/?offset=0&limit=5&type=2 => generated 2369 bytes in 155 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 4716|app: 0|req: 2/6] 192.168.1.109 () {38 vars in 750 bytes} [Mon Jul 10 06:59:18 2017] GET /jobs/get_lagou/?offset=0&limit=5&type=2 => generated 2369 bytes in 81 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 1)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 4716|app: 0|req: 3/7] 192.168.1.109 () {38 vars in 750 bytes} [Mon Jul 10 07:00:36 2017] GET /jobs/get_lagou/?offset=0&limit=5&type=2 => generated 2369 bytes in 55 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 4719|app: 0|req: 1/8] 192.168.1.109 () {38 vars in 750 bytes} [Mon Jul 10 07:00:41 2017] GET /jobs/get_lagou/?offset=0&limit=5&type=2 => generated 2369 bytes in 267 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 4722)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Mon Jul 10 00:01:37 2017] ***
+compiled with version: 5.4.0 20160609 on 09 July 2017 23:15:07
+os: Linux-4.8.0-58-generic #63~16.04.1-Ubuntu SMP Mon Jun 26 18:08:51 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/shawn/Desktop/workspace/JobSpider
+writing pidfile to uwsgi.pid
+detected binary path: /home/shawn/.virtualenvs/py2/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shawn/Desktop/workspace/JobSpider
+your processes number limit is 7758
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 192.168.1.104:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:36543 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x16227f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x16227f0 pid: 5015 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5015)
+spawned uWSGI worker 1 (pid: 5018, cores: 2)
+spawned uWSGI worker 2 (pid: 5019, cores: 2)
+spawned uWSGI worker 3 (pid: 5021, cores: 2)
+spawned uWSGI worker 4 (pid: 5022, cores: 2)
+spawned uWSGI http 1 (pid: 5023)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 5022|app: 0|req: 1/1] 192.168.1.109 () {38 vars in 749 bytes} [Mon Jul 10 07:01:43 2017] GET /jobs/get_lagou/?offset=0&limit=5&type=2 => generated 2369 bytes in 1020 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 5019|app: 0|req: 1/2] 192.168.1.109 () {38 vars in 749 bytes} [Mon Jul 10 07:01:46 2017] GET /jobs/get_lagou/?offset=0&limit=5&type=2 => generated 2369 bytes in 81 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 5022|app: 0|req: 2/3] 192.168.1.109 () {38 vars in 749 bytes} [Mon Jul 10 07:03:23 2017] GET /jobs/get_lagou/?offset=0&limit=5&type=2 => generated 2369 bytes in 96 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 1)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 5019|app: 0|req: 2/4] 192.168.1.109 () {38 vars in 749 bytes} [Mon Jul 10 07:03:25 2017] GET /jobs/get_lagou/?offset=0&limit=5&type=2 => generated 2369 bytes in 865 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 1)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 5022|app: 0|req: 3/5] 192.168.1.109 () {38 vars in 749 bytes} [Mon Jul 10 07:03:28 2017] GET /jobs/get_lagou/?offset=0&limit=5&type=2 => generated 2369 bytes in 72 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 5023)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Mon Jul 10 00:03:45 2017] ***
+compiled with version: 5.4.0 20160609 on 09 July 2017 23:15:07
+os: Linux-4.8.0-58-generic #63~16.04.1-Ubuntu SMP Mon Jun 26 18:08:51 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/shawn/Desktop/workspace/JobSpider
+writing pidfile to uwsgi.pid
+detected binary path: /home/shawn/.virtualenvs/py2/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shawn/Desktop/workspace/JobSpider
+your processes number limit is 7758
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 192.168.1.104:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:42761 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x22097f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x22097f0 pid: 5216 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5216)
+spawned uWSGI worker 1 (pid: 5219, cores: 2)
+spawned uWSGI worker 2 (pid: 5220, cores: 2)
+spawned uWSGI worker 3 (pid: 5221, cores: 2)
+spawned uWSGI worker 4 (pid: 5222, cores: 2)
+spawned uWSGI http 1 (pid: 5224)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 5222|app: 0|req: 1/1] 192.168.1.109 () {38 vars in 750 bytes} [Mon Jul 10 07:03:51 2017] GET /jobs/get_lagou/?offset=0&limit=5&type=2 => generated 2438 bytes in 127 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 5220|app: 0|req: 1/2] 192.168.1.109 () {36 vars in 719 bytes} [Mon Jul 10 07:03:56 2017] GET /jobs/get_lagou/?offset=0&limit=5&type=1 => generated 2369 bytes in 99 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 5219|app: 0|req: 1/3] 192.168.1.109 () {36 vars in 719 bytes} [Mon Jul 10 07:04:02 2017] GET /jobs/get_lagou/?offset=0&limit=5&type=2 => generated 2438 bytes in 100 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 5222|app: 0|req: 2/4] 192.168.1.109 () {36 vars in 719 bytes} [Mon Jul 10 07:04:13 2017] GET /jobs/get_lagou/?offset=2&limit=5&type=2 => generated 2389 bytes in 208 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 5224)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Mon Jul 10 00:13:53 2017] ***
+compiled with version: 5.4.0 20160609 on 09 July 2017 23:15:07
+os: Linux-4.8.0-58-generic #63~16.04.1-Ubuntu SMP Mon Jun 26 18:08:51 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/shawn/Desktop/workspace/JobSpider
+writing pidfile to uwsgi.pid
+detected binary path: /home/shawn/.virtualenvs/py2/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shawn/Desktop/workspace/JobSpider
+your processes number limit is 7758
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 192.168.1.104:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:37195 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xd0c7f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xd0c7f0 pid: 5402 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5402)
+spawned uWSGI worker 1 (pid: 5405, cores: 2)
+spawned uWSGI worker 2 (pid: 5406, cores: 2)
+spawned uWSGI worker 3 (pid: 5407, cores: 2)
+spawned uWSGI worker 4 (pid: 5409, cores: 2)
+spawned uWSGI http 1 (pid: 5410)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 5406|app: 0|req: 1/1] 192.168.1.109 () {36 vars in 723 bytes} [Mon Jul 10 07:14:06 2017] GET /jobs/get_zhilian/?offset=2&limit=5&type=2 => generated 2389 bytes in 115 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 5410)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Mon Jul 10 00:15:18 2017] ***
+compiled with version: 5.4.0 20160609 on 09 July 2017 23:15:07
+os: Linux-4.8.0-58-generic #63~16.04.1-Ubuntu SMP Mon Jun 26 18:08:51 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/shawn/Desktop/workspace/JobSpider
+writing pidfile to uwsgi.pid
+detected binary path: /home/shawn/.virtualenvs/py2/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shawn/Desktop/workspace/JobSpider
+your processes number limit is 7758
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 192.168.1.104:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:46597 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1c477f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1c477f0 pid: 5580 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5580)
+spawned uWSGI worker 1 (pid: 5583, cores: 2)
+spawned uWSGI worker 2 (pid: 5584, cores: 2)
+spawned uWSGI worker 3 (pid: 5586, cores: 2)
+spawned uWSGI worker 4 (pid: 5587, cores: 2)
+spawned uWSGI http 1 (pid: 5589)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 5587|app: 0|req: 1/1] 192.168.1.109 () {38 vars in 754 bytes} [Mon Jul 10 07:15:25 2017] GET /jobs/get_zhilian/?offset=2&limit=5&type=2 => generated 1786 bytes in 220 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 5587|app: 0|req: 2/2] 192.168.1.109 () {36 vars in 723 bytes} [Mon Jul 10 07:15:32 2017] GET /jobs/get_zhilian/?offset=2&limit=5&type=1 => generated 1685 bytes in 161 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 5589)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Mon Jul 10 00:18:55 2017] ***
+compiled with version: 5.4.0 20160609 on 09 July 2017 23:15:07
+os: Linux-4.8.0-58-generic #63~16.04.1-Ubuntu SMP Mon Jun 26 18:08:51 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/shawn/Desktop/workspace/JobSpider
+writing pidfile to uwsgi.pid
+detected binary path: /home/shawn/.virtualenvs/py2/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shawn/Desktop/workspace/JobSpider
+your processes number limit is 7758
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 192.168.1.104:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:46571 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x231d7f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x231d7f0 pid: 5654 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5654)
+spawned uWSGI worker 1 (pid: 5657, cores: 2)
+spawned uWSGI worker 2 (pid: 5658, cores: 2)
+spawned uWSGI worker 3 (pid: 5659, cores: 2)
+spawned uWSGI worker 4 (pid: 5661, cores: 2)
+spawned uWSGI http 1 (pid: 5662)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 5661|app: 0|req: 1/1] 192.168.1.109 () {38 vars in 754 bytes} [Mon Jul 10 07:19:06 2017] GET /jobs/get_zhilian/?offset=2&limit=5&type=1 => generated 1685 bytes in 136 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 5661|app: 0|req: 2/2] 192.168.1.109 () {36 vars in 723 bytes} [Mon Jul 10 07:19:12 2017] GET /jobs/get_zhilian/?offset=2&limit=5&type=2 => generated 1786 bytes in 105 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 5662)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Mon Jul 10 00:20:25 2017] ***
+compiled with version: 5.4.0 20160609 on 09 July 2017 23:15:07
+os: Linux-4.8.0-58-generic #63~16.04.1-Ubuntu SMP Mon Jun 26 18:08:51 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/shawn/Desktop/workspace/JobSpider
+writing pidfile to uwsgi.pid
+detected binary path: /home/shawn/.virtualenvs/py2/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shawn/Desktop/workspace/JobSpider
+your processes number limit is 7758
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 192.168.1.104:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:40599 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xb3b7f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xb3b7f0 pid: 5705 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5705)
+spawned uWSGI worker 1 (pid: 5708, cores: 2)
+spawned uWSGI worker 2 (pid: 5709, cores: 2)
+spawned uWSGI worker 3 (pid: 5710, cores: 2)
+spawned uWSGI worker 4 (pid: 5712, cores: 2)
+spawned uWSGI http 1 (pid: 5713)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 5708|app: 0|req: 1/1] 192.168.1.109 () {38 vars in 753 bytes} [Mon Jul 10 07:20:44 2017] GET /jobs/get_zhilian/?offset=2&limit=5&type=2 => generated 1786 bytes in 534 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 5712|app: 0|req: 1/2] 192.168.1.109 () {36 vars in 722 bytes} [Mon Jul 10 07:20:49 2017] GET /jobs/get_zhilian/?offset=2&limit=5&type=1 => generated 1685 bytes in 132 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 5712|app: 0|req: 2/3] 192.168.1.109 () {36 vars in 722 bytes} [Mon Jul 10 07:20:54 2017] GET /jobs/get_zhilian/?offset=2&limit=6&type=1 => generated 2292 bytes in 125 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 1)
+('mlgb', <class 'django.db.models.query.QuerySet'>)
+<type 'list'>
+[pid: 5710|app: 0|req: 1/4] 192.168.1.109 () {36 vars in 718 bytes} [Mon Jul 10 07:21:02 2017] GET /jobs/get_lagou/?offset=2&limit=6&type=1 => generated 2881 bytes in 214 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 5713)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
